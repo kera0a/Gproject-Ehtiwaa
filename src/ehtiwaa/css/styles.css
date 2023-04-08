@@ -1,0 +1,58 @@
+
+.textfild1{
+    -fx-background-color : #c9dbd9;   
+    -fx-border-color: #3d5272;
+    -fx-border-width: 1;
+}
+
+.buttons1{
+    -fx-background-color : #c9dbd9;
+    -fx-background-radius: 10 ;
+
+}
+
+.buttons2{
+    -fx-background-color :#3d5272;
+    -fx-background-radius: 10 ;
+}
+
+.combobox{
+    -fx-background-color : #ffffff;
+    -fx-background-radius: 10 ;
+    -fx-border-color: #c9dbd9;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.scrollbar{
+    -fx-background-color :#6d918d ;
+    -fx-background-radius: 10 ;
+    -fx-border-color: #6d918d ;
+    -fx-border-radius: 50;
+    -fx-border-width: 1;
+}
+
+
+.buttonsBar {
+    -fx-background-color :#c9dbd9;
+     -fx-background-radius: 10;
+    
+    
+}
+
+.textfild{
+    -fx-background-color :#eddbed;
+    -fx-background-radius: 0 ;
+    -fx-border-color:#5D1A1A;
+    -fx-border-radius: 0;
+    -fx-border-width: 1;
+}
+
+
+
+
+
+
+
+
+
