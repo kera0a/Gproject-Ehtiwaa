@@ -19,7 +19,7 @@
    <children>
       <Pane layoutX="42.0" layoutY="61.0" prefHeight="24.0" prefWidth="267.0">
          <children>
-            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f8f3f1" height="546.0" layoutX="1.0" layoutY="-7.0" onMouseClicked="#changeScene" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="10.0" styleClass="StyleRadius" width="284.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f8f3f1" height="546.0" layoutX="1.0" layoutY="-7.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="10.0" styleClass="StyleRadius" width="284.0" />
             <Label layoutX="29.0" layoutY="2.0" prefHeight="20.0" prefWidth="48.0" text="11:07" textFill="#221b1b">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -453,7 +453,7 @@
                   </ImageView>
                   <Pane layoutX="15.0" layoutY="432.0" prefHeight="29.0" prefWidth="267.0">
                      <children>
-                        <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
+                        <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
                            <graphic>
                               <Pane prefHeight="29.0" prefWidth="56.0">
                                  <children>
@@ -464,14 +464,14 @@
                                     </Label>
                                     <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="28.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../NetBeansProjects/EHTIWAA/src/EhtiwaImages.images/list.png" />
+                                          <Image url="@../EhtiwaImages.images/list.png" />
                                        </image>
                                     </ImageView>
                                  </children>
                               </Pane>
                            </graphic>
                         </Button>
-                        <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
+                        <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
                            <graphic>
                               <Pane prefHeight="29.0" prefWidth="33.0">
                                  <children>
@@ -482,14 +482,14 @@
                                     </Label>
                                     <ImageView fitHeight="24.0" fitWidth="33.0" layoutX="28.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../NetBeansProjects/EHTIWAA/src/EhtiwaImages.images/more.png" />
+                                          <Image url="@../EhtiwaImages.images/more.png" />
                                        </image>
                                     </ImageView>
                                  </children>
                               </Pane>
                            </graphic>
                         </Button>
-                        <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
+                        <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHome_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
                            <graphic>
                               <Pane prefHeight="29.0" prefWidth="33.0">
                                  <children>
@@ -500,7 +500,7 @@
                                     </Label>
                                     <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="26.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
-                                          <Image url="@../../../NetBeansProjects/EHTIWAA/src/EhtiwaImages.images/IM2.png" />
+                                          <Image url="@../EhtiwaImages.images/IM2.png" />
                                        </image>
                                     </ImageView>
                                  </children>

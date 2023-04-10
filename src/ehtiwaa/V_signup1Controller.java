@@ -5,11 +5,14 @@
  */
 package ehtiwaa;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -51,15 +54,31 @@ public class V_signup1Controller implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void NextPage(ActionEvent event) {
-    }
-        @FXML
-    private void BackPage(ActionEvent event) {
-    }
 
-    @FXML
-    private void changeScene(MouseEvent event) {
-    }
+        @FXML
+    private void GoToSingup(ActionEvent event) {}
+    
+
+        
+    
+      @FXML
+     public void GoToNextSingup(ActionEvent event) throws IOException {
+      Parent root = FXMLLoader.load(getClass().getResource("V_signup.fxml"));
+      scene  = new Scene(root); 
+      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+      stage.setScene(scene);
+      stage.show();
+     
+     }
+      @FXML
+      public void BackToPage_V(ActionEvent event) throws IOException {
+      Parent root = FXMLLoader.load(getClass().getResource("V_Login_2.fxml"));
+      scene  = new Scene(root); 
+      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+      stage.setScene(scene);
+      stage.show();
+     
+     }
+
     
 }

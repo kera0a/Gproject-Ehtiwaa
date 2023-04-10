@@ -43,7 +43,7 @@ public class V_More_00Controller implements Initializable {
      //E_homeButton
     @FXML
     public void BackToHome_V(ActionEvent event) throws IOException{       
-        Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("V_AcceptRequest_4.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -98,7 +98,7 @@ public class V_More_00Controller implements Initializable {
     @FXML
     public void GoToAbuteUs_Page_V(ActionEvent event) throws IOException{
 
-        Parent root = FXMLLoader.load(getClass().getResource("E_AbuteUs_02.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("V_AbuteUs_0.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);

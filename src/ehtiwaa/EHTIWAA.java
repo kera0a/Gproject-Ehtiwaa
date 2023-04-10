@@ -26,7 +26,7 @@ public class EHTIWAA extends Application {
     public void start(Stage stage) throws IOException {
         //Create the scene
         //load the view     
-        Parent root = FXMLLoader.load(getClass().getResource("ALL_Welcome_1.fxml")); 
+        Parent root = FXMLLoader.load(getClass().getResource("E_signup2.fxml")); 
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

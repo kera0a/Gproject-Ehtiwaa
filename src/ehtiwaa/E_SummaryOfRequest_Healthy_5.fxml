@@ -83,7 +83,7 @@
       </Pane>
       <Pane layoutX="48.0" layoutY="558.0" prefHeight="29.0" prefWidth="267.0">
          <children>
-            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="33.0">
                      <children>
@@ -101,7 +101,7 @@
                   </Pane>
                </graphic>
             </Button>
-            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="56.0">
                      <children>
@@ -119,7 +119,7 @@
                   </Pane>
                </graphic>
             </Button>
-            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHomePage" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="33.0">
                      <children>

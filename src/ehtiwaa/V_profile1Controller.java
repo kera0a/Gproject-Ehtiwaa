@@ -30,8 +30,6 @@ public class V_profile1Controller implements Initializable {
    private Scene scene;
    private Parent root;
     @FXML
-    private Button login11;
-    @FXML
     private TextField usarName;
     @FXML
     private TextField usarName1;
@@ -54,57 +52,46 @@ public class V_profile1Controller implements Initializable {
         // TODO
     }    
     
-        //E_homeButton
-    public void BackToHome_E(ActionEvent event) throws IOException{       
-        Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
+ 
+     //V_homeButton
+    public void BackToHome_V(ActionEvent event) throws IOException{       
+        Parent root = FXMLLoader.load(getClass().getResource("V_AcceptRequest_4.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     } 
 
-    //request Button
-    public void GoToRequest_E(ActionEvent event) throws IOException{
+    //V-request Button
+    public void GoToRequest_V(ActionEvent event) throws IOException{
 
-        Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("V_AllRequest_7.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     } 
 
-    //more Button
-    public void GoToMore_E(ActionEvent event) throws IOException{
+    //V-more Button
+    public void GoToMore_V(ActionEvent event) throws IOException{
 
-        Parent root = FXMLLoader.load(getClass().getResource("E_More_00.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("V_More_00.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     } 
     
-    //mext Button
-    public void GoToProfile2_E(ActionEvent event) throws IOException{
+    
+    //next Button
+    public void GoToProfile2_V(ActionEvent event) throws IOException{
 
-        Parent root = FXMLLoader.load(getClass().getResource("E_profile2.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("V_profile2.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
-
-    @FXML
-    private void changeScene(MouseEvent event) {
-    }
-
-    @FXML
-    private void singin(ActionEvent event) {
-    }
-
-    @FXML
-    private void gotohomepageEsignup(ActionEvent event) {
-    }
-
 
     
 }

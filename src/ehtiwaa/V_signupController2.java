@@ -5,11 +5,14 @@
  */
 package ehtiwaa;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -22,14 +25,11 @@ import javafx.stage.Stage;
  *
  * @author huawei
  */
-public class V_signupController implements Initializable {
+public class V_signupController2 implements Initializable {
    private Stage stage;
    private Scene scene;
    private Parent root;
-    @FXML
-    private Button login;
-    @FXML
-    private Button login1;
+  
     @FXML
     private TextField usarName;
 
@@ -40,15 +40,24 @@ public class V_signupController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-
-    @FXML
-    private void changeScene(MouseEvent event) {
-    }
-
-    @FXML
-    private void singin(ActionEvent event) {
-    }
-       @FXML
-    private void BackPage(ActionEvent event) {
-    } 
+    
+    
+     @FXML
+     public void GoToSingup(ActionEvent event) throws IOException {
+      Parent root = FXMLLoader.load(getClass().getResource("V_AllRequest_7.fxml"));
+      scene  = new Scene(root); 
+      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+      stage.setScene(scene);
+      stage.show();
+     
+     } 
+     @FXML
+     public void BackToPage_V(ActionEvent event) throws IOException {
+      Parent root = FXMLLoader.load(getClass().getResource("V_signup.fxml"));
+      scene  = new Scene(root); 
+      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+      stage.setScene(scene);
+      stage.show();
+     
+     } 
 }
