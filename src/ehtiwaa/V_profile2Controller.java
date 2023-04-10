@@ -33,6 +33,7 @@ public class V_profile2Controller implements Initializable {
     @FXML
     private TextField usarName;
 
+    
     /**
      * Initializes the controller class.
      */
@@ -46,7 +47,13 @@ public class V_profile2Controller implements Initializable {
     }
 
     @FXML
-    private void singin(ActionEvent event) {
+    public void Modify(ActionEvent event) {
     }
+      @FXML
+    public void BackPage(ActionEvent event) {
+    }
+
+ 
+    
     
 }

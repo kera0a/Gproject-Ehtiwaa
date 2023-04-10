@@ -52,7 +52,10 @@ public class V_signup1Controller implements Initializable {
     }    
 
     @FXML
-    private void singin(ActionEvent event) {
+    private void NextPage(ActionEvent event) {
+    }
+        @FXML
+    private void BackPage(ActionEvent event) {
     }
 
     @FXML
