@@ -129,12 +129,12 @@
                            <font>
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font></Label>
-                        <Button fx:id="login" layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
+                        <Button layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#BackPage" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="login1" layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="تعديل" textFill="#faf3f3">
+                        <Button layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#Modify" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="تعديل" textFill="#faf3f3">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>

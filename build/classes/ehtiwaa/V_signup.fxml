@@ -80,7 +80,7 @@
                   <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="137.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
                </children>
             </Pane>
-            <Pane layoutX="20.0" layoutY="147.0" prefHeight="415.0" prefWidth="288.0">
+            <Pane layoutX="20.0" layoutY="147.0" prefHeight="344.0" prefWidth="288.0">
                <children>
                   <Pane layoutX="-138.0" layoutY="30.0" prefHeight="284.0" prefWidth="261.0">
                      <children>
@@ -181,12 +181,12 @@
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="login" layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
+                        <Button layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#BackPage" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="login1" layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="تسجيل" textFill="#faf3f3">
+                        <Button layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="تسجيل" textFill="#faf3f3">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>

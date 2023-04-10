@@ -48,7 +48,7 @@ public class ALL_Welcome_1Controller implements Initializable {
       stage.setScene(scene);
       stage.show();
         }*/
-              @FXML 
+       /*       @FXML 
        public void GoToLoginV(ActionEvent event) throws IOException {
     Parent root = FXMLLoader.load(getClass().getResource("V_Login_2.fxml"));
       scene  = new Scene(root); 
@@ -56,7 +56,7 @@ public class ALL_Welcome_1Controller implements Initializable {
       stage.setScene(scene);
       stage.show();
            
-       }
+       }*/
        @FXML
     public void GoToLoginE(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader();
@@ -68,5 +68,20 @@ public class ALL_Welcome_1Controller implements Initializable {
       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
       stage.setScene(scene);
       stage.show();
+    }
+    
+    
+    
+           @FXML
+    public void GoToLoginV(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("V_Login_2.fxml"));
+        Parent root = loader.load();
+        //ALL_Welcome_1Controller controller = loader.getController();
+       // controller.display(); 
+        scene  = new Scene(root); 
+       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+       stage.setScene(scene);
+       stage.show();
     }
 }

@@ -44,7 +44,7 @@ public class V_Login_2Controller implements Initializable {
      
      
         
-     public void GoTosighnupV(ActionEvent event) throws IOException {
+     public void GoTosingupV(ActionEvent event) throws IOException {
       Parent root = FXMLLoader.load(getClass().getResource("V_signup1.fxml"));
       scene  = new Scene(root); 
       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();

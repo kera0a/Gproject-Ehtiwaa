@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="608.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<Pane prefHeight="608.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehtiwaa.E_Confirmation_Social_6Controller">
    <children>
       <Pane layoutX="42.0" layoutY="61.0" prefHeight="24.0" prefWidth="267.0">
          <children>
@@ -71,7 +71,7 @@
       </Pane>
       <Pane layoutX="51.0" layoutY="558.0" prefHeight="29.0" prefWidth="267.0">
          <children>
-            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore_E" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="33.0">
                      <children>
@@ -89,7 +89,7 @@
                   </Pane>
                </graphic>
             </Button>
-            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest_E" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="56.0">
                      <children>
@@ -107,7 +107,7 @@
                   </Pane>
                </graphic>
             </Button>
-            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHome_E" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHomePage" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="33.0">
                      <children>

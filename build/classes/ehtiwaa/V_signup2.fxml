@@ -67,22 +67,14 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Button fx:id="login" layoutX="32.0" layoutY="197.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@../../../../Ehtiwa43/EHTIWAA/src/ehtiwaa/css/styles.css" text="التالي" textFill="#0b0b0b">
-                     <font>
-                        <Font name="Sakkal Majalla Bold" size="12.0" />
-                     </font>
-                  </Button>
+
                   <TextField alignment="CENTER_RIGHT" layoutX="27.0" layoutY="155.0" prefHeight="25.0" prefWidth="212.0" promptText="المدينة" />
                   <Label layoutX="201.0" layoutY="134.0" text="المدينة">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Label>
-                  <Button fx:id="login1" layoutX="31.0" layoutY="229.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@../../../../Ehtiwa43/EHTIWAA/src/ehtiwaa/css/styles.css" text="تعديل" textFill="#0b0b0b">
-                     <font>
-                        <Font name="Sakkal Majalla Bold" size="12.0" />
-                     </font>
-                  </Button>
+
                </children>
             </Pane>
             <Text fill="#161616" layoutX="129.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الملف الشخصي" wrappingWidth="152.66664123535156">
@@ -163,7 +155,7 @@
                                     </ImageView>
                                  </graphic>
                               </Button>
-                              <Button fx:id="homepageVsignupbtn" layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#gotohomepageVsignup" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+                              <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                                  <graphic>
                                     <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                                        <image>
@@ -182,12 +174,12 @@
                               <Pane layoutX="-138.0" layoutY="30.0" prefHeight="284.0" prefWidth="261.0">
                                  <children>
                                     <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="444.0" layoutX="137.0" layoutY="-135.0" stroke="WHITE" strokeWidth="5.0" width="248.0" />
-                                    <Button fx:id="login1" layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
+                                    <Button layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#BackPage" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
                                        <font>
                                           <Font name="Sakkal Majalla Bold" size="12.0" />
                                        </font>
                                     </Button>
-                                    <Button fx:id="login11" layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#singin" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="التالي" textFill="#faf3f3">
+                                    <Button layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#NextPage" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="التالي" textFill="#faf3f3">
                                        <font>
                                           <Font name="Sakkal Majalla Bold" size="12.0" />
                                        </font>
