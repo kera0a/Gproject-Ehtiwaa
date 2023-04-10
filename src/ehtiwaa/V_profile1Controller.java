@@ -38,9 +38,13 @@ public class V_profile1Controller implements Initializable {
     @FXML
     private TextField usarName11;
     @FXML
-    private TextField usarName111;
+    private Button homepageEsingupbtn;
     @FXML
-    private TextField usarName1111;
+    private Button login1;
+    @FXML
+    private TextField usarName12;
+    @FXML
+    private TextField usarName2;
 
     /**
      * Initializes the controller class.
@@ -51,7 +55,6 @@ public class V_profile1Controller implements Initializable {
     }    
     
         //E_homeButton
-    @FXML
     public void BackToHome_E(ActionEvent event) throws IOException{       
         Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
         scene  = new Scene(root); 
@@ -61,7 +64,6 @@ public class V_profile1Controller implements Initializable {
     } 
 
     //request Button
-    @FXML
     public void GoToRequest_E(ActionEvent event) throws IOException{
 
         Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
@@ -72,7 +74,6 @@ public class V_profile1Controller implements Initializable {
     } 
 
     //more Button
-    @FXML
     public void GoToMore_E(ActionEvent event) throws IOException{
 
         Parent root = FXMLLoader.load(getClass().getResource("E_More_00.fxml"));
@@ -83,7 +84,6 @@ public class V_profile1Controller implements Initializable {
     } 
     
     //mext Button
-    @FXML
     public void GoToProfile2_E(ActionEvent event) throws IOException{
 
         Parent root = FXMLLoader.load(getClass().getResource("E_profile2.fxml"));
@@ -99,6 +99,10 @@ public class V_profile1Controller implements Initializable {
 
     @FXML
     private void singin(ActionEvent event) {
+    }
+
+    @FXML
+    private void gotohomepageEsignup(ActionEvent event) {
     }
 
 
