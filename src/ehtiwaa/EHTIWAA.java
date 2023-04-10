@@ -24,13 +24,12 @@ public class EHTIWAA extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-         //Create the scene
+        //Create the scene
         //load the view     
         Parent root = FXMLLoader.load(getClass().getResource("ALL_Welcome_1.fxml")); 
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
     }
 
     /**

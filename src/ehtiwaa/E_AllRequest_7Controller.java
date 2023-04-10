@@ -34,52 +34,35 @@ public class E_AllRequest_7Controller implements Initializable {
         // TODO
     }    
 
-           
-           
-     
-    
-    //bar buttons
-    //main icon
-     @FXML
-    public void BackToHomePage(ActionEvent event) throws IOException{
-           // Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
-           // Scene Erequestscene = new Scene (root);
-            //Stage homepagescene = (Stage) ((Node) event.getSource()).getScene().getWindow();
-           // homepagescene.setScene(Erequestscene);
-           // homepagescene.show();
-           
-      Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-    
-
-    
-    
-    
-    //request icon
-     @FXML
-     public void GoToRequest(ActionEvent event) throws IOException{
-
-      Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-
- 
-   
-    //more icon
+         //E_homeButton
     @FXML
-     public void GoToMore(ActionEvent event) throws IOException{
+    public void BackToHome_E(ActionEvent event) throws IOException{       
+        Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    } 
 
-      Parent root = FXMLLoader.load(getClass().getResource("ALL_More.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-}
+    //request Button
+    @FXML
+    public void GoToRequest_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    } 
+
+    //more Button
+    @FXML
+    public void GoToMore_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_More_00.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    } 
 }

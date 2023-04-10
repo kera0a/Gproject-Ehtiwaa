@@ -82,9 +82,9 @@ public class E_SummaryOfRequest_Psychological_5Controller implements Initializab
       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
       stage.setScene(scene);
       stage.show();
-}         
+    }         
     
-    
+   
     
     
 }

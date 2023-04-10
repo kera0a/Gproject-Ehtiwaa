@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -60,7 +61,6 @@ public class E_SummaryOfRequest_Social_5Controller implements Initializable {
     
     
     //request icon
-     @FXML
      public void GoToRequest(ActionEvent event) throws IOException{
 
       Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
@@ -81,7 +81,17 @@ public class E_SummaryOfRequest_Social_5Controller implements Initializable {
       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
       stage.setScene(scene);
       stage.show();
-}         
+    }  
+
+    @FXML
+    private void changeScene(MouseEvent event) {
+    }
+
+    @FXML
+    private void MakeArequest(ActionEvent event) {
+    }
+     
+ 
     
     
     

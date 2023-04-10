@@ -83,7 +83,8 @@ public class E_SummaryOfRequest_Healthy_5Controller implements Initializable {
       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
       stage.setScene(scene);
       stage.show();
-}       
-    
+    } 
+     
+   
     
 }

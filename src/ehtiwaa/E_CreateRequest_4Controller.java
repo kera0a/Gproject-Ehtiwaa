@@ -33,95 +33,82 @@ public class E_CreateRequest_4Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }  
-    //btn Psychological service
-       @FXML
-       public void GoToPsychologicalPage(ActionEvent event) throws IOException {
-      Parent root = FXMLLoader.load(getClass().getResource(".fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        }
-       
-        //btn healthy service
-       @FXML
-       public void GoToHealthyPage(ActionEvent event) throws IOException {
-      Parent HealthyPageR = FXMLLoader.load(getClass().getResource("E_SummaryOfRequest_Psychological_5.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();    
-       }
-       
-       
-       //btn social service
-        @FXML
-       public void GoToSocialPage(ActionEvent event) throws IOException {
-      Parent root = FXMLLoader.load(getClass().getResource("E_SummaryOfRequest_Social_5.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        }
-       
-            
-        //btn urgent call service
-      @FXML
-       public void GoToUrgentCallPage(ActionEvent event) throws IOException {
-    Parent root = FXMLLoader.load(getClass().getResource("E_UrgentCall.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-           
-       }
-       
-       
-          //bar buttons
-    //main icon
-     @FXML
-    public void BackToHomePage(ActionEvent event) throws IOException{
-           // Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
-           // Scene Erequestscene = new Scene (root);
-            //Stage homepagescene = (Stage) ((Node) event.getSource()).getScene().getWindow();
-           // homepagescene.setScene(Erequestscene);
-           // homepagescene.show();
-           
-      Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-    
 
-    
-    
-    
-    //request icon
-     @FXML
-     public void GoToRequest(ActionEvent event) throws IOException{
-
-      Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-
- 
-   
-    //more icon
+    //E_homeButton
     @FXML
-     public void GoToMore(ActionEvent event) throws IOException{
+    public void BackToHome_E(ActionEvent event) throws IOException{       
+        Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    } 
 
-      Parent root = FXMLLoader.load(getClass().getResource("ALL_More.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-}    
-       
+    //request Button
+    @FXML
+    public void GoToRequest_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    } 
+
+    //more Button
+    @FXML
+    public void GoToMore_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_More_00.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    //E_SummaryOfRequest_Healthy_5 Button
+    @FXML
+    public void GoToHealthy_5_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_SummaryOfRequest_Healthy_5.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    //E_SummaryOfRequest_Psychological_5 Button
+    @FXML
+    public void GoToPsychological_5_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_SummaryOfRequest_Psychological_5.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    //E_SummaryOfRequest_Psychological_5 Button
+    @FXML
+    public void GoToSocial_5_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_SummaryOfRequest_Social_5.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    //E_SummaryOfRequest_UrgentCall_5 Button
+    @FXML
+    public void GoToUrgentCall_5_E(ActionEvent event) throws IOException{
+
+        Parent root = FXMLLoader.load(getClass().getResource("E_SummaryOfRequest_UrgentCall_5.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
        
        
 }
