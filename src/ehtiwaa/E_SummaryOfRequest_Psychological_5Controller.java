@@ -71,13 +71,11 @@ public class E_SummaryOfRequest_Psychological_5Controller implements Initializab
       stage.show();
         } 
 
- 
-   
     //more icon
     @FXML
      public void GoToMore(ActionEvent event) throws IOException{
 
-      Parent root = FXMLLoader.load(getClass().getResource("ALL_More.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("E_More_00.fxml"));
       scene  = new Scene(root); 
       stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
       stage.setScene(scene);

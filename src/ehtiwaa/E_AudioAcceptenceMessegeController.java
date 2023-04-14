@@ -25,15 +25,10 @@ import javafx.stage.Stage;
  * @author huawei
  */
 public class E_AudioAcceptenceMessegeController implements Initializable {
-   private Stage stage;
-   private Scene scene;
-   private Parent root;
+
     @FXML
-    private Button login12;
-    @FXML
-    private Button dd;
-    @FXML
-    private Button dd1;
+    private Button CancelBT;
+
 
     /**
      * Initializes the controller class.
@@ -42,88 +37,59 @@ public class E_AudioAcceptenceMessegeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+       
+
+
 
     @FXML
-    private void changeScene(MouseEvent event) {
+    private void GoToMore(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("E_More_00.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    private void singin(ActionEvent event) {
+    private void GoToRequest(ActionEvent event) throws IOException {
+        
+        Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
-    private void singup(ActionEvent event) {
+    private void BackToHome(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
-    
-    
-    
-    
-        @FXML
-     public void AccepteBtnAudio(ActionEvent event) throws IOException{
 
-      Parent root = FXMLLoader.load(getClass().getResource("E_AudioCall.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-
-
-    
-    
-        //bar buttons
-    //main icon
-     @FXML
-    public void BackToHomePage(ActionEvent event) throws IOException{
-           // Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
-           // Scene Erequestscene = new Scene (root);
-            //Stage homepagescene = (Stage) ((Node) event.getSource()).getScene().getWindow();
-           // homepagescene.setScene(Erequestscene);
-           // homepagescene.show();
-           
-      Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-    
-
-    
-    
-    
-    //request icon
-     @FXML
-     public void GoToRequest(ActionEvent event) throws IOException{
-
-      Parent root = FXMLLoader.load(getClass().getResource("E_AllRequest_7.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-        } 
-
- 
-   
-    //more icon
     @FXML
-     public void GoToMore(ActionEvent event) throws IOException{
+    private void Cancel(ActionEvent event) throws IOException {
+        
+        Parent root = FXMLLoader.load(getClass().getResource("E_UrgentCall.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 
-      Parent root = FXMLLoader.load(getClass().getResource("ALL_More.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    @FXML
+    private void Accept(ActionEvent event) throws IOException {
+      //here will be code if done connecting with the volunteer then go to the volunteer info page
+        Parent root = FXMLLoader.load(getClass().getResource("E_VolunteerInfo.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();       
+    }
     
 }

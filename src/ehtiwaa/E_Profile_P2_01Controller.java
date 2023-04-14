@@ -16,6 +16,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -30,12 +32,11 @@ public class E_Profile_P2_01Controller implements Initializable {
    private Scene scene;
    private Parent root;
     @FXML
-    private Button login1;
+    private Label AnswerHealthQ;
+    
     @FXML
-    private Button login11;
-    @FXML
-    private TextField usarName;
-
+   private RadioButton YesAnswer, NoAnswer;
+   
     /**
      * Initializes the controller class.
      */
@@ -45,15 +46,6 @@ public class E_Profile_P2_01Controller implements Initializable {
     }  
     
     //profile Button
-    @FXML
-    public void GoToProfile_E(ActionEvent event) throws IOException{
-
-        Parent root = FXMLLoader.load(getClass().getResource("E_Profile_P1_01.fxml"));
-        scene  = new Scene(root); 
-        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-    }
     
     //E_homeButton
     @FXML
@@ -86,13 +78,33 @@ public class E_Profile_P2_01Controller implements Initializable {
         stage.setScene(scene);
         stage.show();
     } 
-    
-    @FXML
-    private void changeScene(MouseEvent event) {
-    }
+
 
     @FXML
-    private void singin(ActionEvent event) {
+    public void GoToProfile1_E(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("E_Profile_P1_01.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        
     }
+
+       @FXML
+       public void AnswerHealthQ(ActionEvent event) {
+       
+         /*    if(YesAnswer.isSelected()) {
+             AnswerHealthQ.setText(YesAnswer.getText());
+             }
+                 else if(NoAnswer.isSelected()) {
+                  AnswerHealthQ.setText(NoAnswer.getText());
+                  }*/
+         }
+
+  
+
+
+
+
     
 }

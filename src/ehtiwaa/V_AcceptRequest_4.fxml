@@ -188,7 +188,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane layoutX="50.0" layoutY="559.0" prefHeight="29.0" prefWidth="267.0">
+      <Pane layoutX="50.0" layoutY="559.0" prefHeight="29.0" prefWidth="267.0" stylesheets="@css/styles.css">
          <children>
             <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
                <graphic>

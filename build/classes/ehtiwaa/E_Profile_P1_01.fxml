@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
@@ -48,32 +49,32 @@
             <Circle fill="#2d2c2c" layoutX="166.0" layoutY="9.0" radius="3.0" stroke="#4e4d4d" strokeType="INSIDE" strokeWidth="1.5" />
             <Pane layoutX="-130.0" layoutY="188.0" prefHeight="284.0" prefWidth="261.0">
                <children>
-                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="374.0" layoutX="157.0" layoutY="-107.0" stroke="WHITE" strokeWidth="5.0" width="232.0" />
-                  <DatePicker layoutX="258.0" layoutY="197.0" prefHeight="25.0" prefWidth="109.0" styleClass="textfild1" stylesheets="@css/styles.css" />
-                  <Label layoutX="319.0" layoutY="176.0" text="تاريخ الميلاد">
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="420.0" layoutX="153.0" layoutY="-147.0" stroke="WHITE" strokeWidth="5.0" width="242.0" />
+                  <DatePicker layoutX="258.0" layoutY="201.0" prefHeight="25.0" prefWidth="109.0" styleClass="textfild1" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css" />
+                  <Label layoutX="319.0" layoutY="179.0" text="تاريخ الميلاد">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="223.0" layoutY="179.0" text="الجنس">
+                  <Label layoutX="223.0" layoutY="178.0" text="الجنس">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="225.0" layoutY="-98.0" prefHeight="21.0" prefWidth="85.0" text="الملف الشخصي" textAlignment="RIGHT" wrapText="true">
+                  <Label layoutX="229.0" layoutY="-151.0" prefHeight="21.0" prefWidth="85.0" text="الملف الشخصي" textAlignment="RIGHT" wrapText="true">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="18.0" />
                      </font>
                   </Label>
                   <Pane layoutX="174.0" layoutY="-50.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <TextField fx:id="usarName" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="الإسم الثلاثي" styleClass="textfild2" stylesheets="@css/styles.css">
+                        <TextField fx:id="usarName" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="الإسم الثلاثي" styleClass="textfild2" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
                         </TextField>
                         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" layoutY="-1.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                        <Label layoutX="136.0" layoutY="-19.0" text="الإسم الثلاثي">
+                        <Label layoutX="136.0" layoutY="-23.0" text="الإسم الثلاثي">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
@@ -85,15 +86,9 @@
                         </ImageView>
                      </children>
                   </Pane>
-                  <MenuButton layoutX="176.0" layoutY="197.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="78.0" styleClass="textfild2" stylesheets="@css/styles.css" text="الجنس">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="انثى" />
-                        <MenuItem mnemonicParsing="false" text="دكر" />
-                     </items>
-                  </MenuButton>
                   <Pane layoutX="174.0" layoutY="-1.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <TextField fx:id="usarName1" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="الجنسية" styleClass="textfild2" stylesheets="@css/styles.css">
+                        <TextField fx:id="usarName1" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="الجنسية" styleClass="textfild2" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -113,7 +108,7 @@
                   </Pane>
                   <Pane layoutX="174.0" layoutY="48.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <TextField fx:id="usarName11" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="المستوى التعليمي" styleClass="textfild2" stylesheets="@css/styles.css">
+                        <TextField fx:id="usarName11" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="المستوى التعليمي" styleClass="textfild2" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -133,7 +128,7 @@
                   </Pane>
                   <Pane layoutX="174.0" layoutY="97.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <TextField fx:id="usarName111" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="رقم الجوال" styleClass="textfild2" stylesheets="@css/styles.css">
+                        <TextField fx:id="usarName111" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="رقم الجوال" styleClass="textfild2" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -153,7 +148,7 @@
                   </Pane>
                   <Pane layoutX="174.0" layoutY="147.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <TextField fx:id="usarName1111" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="المدينة" styleClass="textfild2" stylesheets="@css/styles.css">
+                        <TextField fx:id="usarName1111" alignment="CENTER_RIGHT" cacheShape="false" layoutX="2.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="المدينة" styleClass="textfild2" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -171,12 +166,35 @@
                         </Label>
                      </children>
                   </Pane>
-                  <ImageView fitHeight="65.0" fitWidth="85.0" layoutX="313.0" layoutY="-144.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="76.0" fitWidth="85.0" layoutX="320.0" layoutY="-162.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../EhtiwaImages.images/logo_Ehtewa2-remove.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="193.0" layoutY="254.0" mnemonicParsing="false" onAction="#GoToProfile_P2_E" prefHeight="13.0" prefWidth="164.0" styleClass="buttons2" stylesheets="@css/styles.css" text="التالي" textFill="WHITE" />
+                  <Button layoutX="193.0" layoutY="254.0" mnemonicParsing="false" onAction="#GoToProfile2_E" prefHeight="13.0" prefWidth="164.0" styleClass="buttons2" text="التالي" textFill="WHITE">
+                     <font>
+                        <Font name="Sakkal Majalla" size="12.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@../css/styles.css" />
+                        <URL value="@css/styles.css" />
+                     </stylesheets>
+                  </Button>
+                  <Pane layoutX="233.0" layoutY="-124.0" prefHeight="64.0" prefWidth="85.0">
+                     <children>
+                        <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="9.0" layoutY="3.0">
+                           <image>
+                              <Image url="@../EhtiwaImages.images/no%20profile%20pic.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <MenuButton layoutX="176.0" layoutY="199.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="78.0" styleClass="textfild2" stylesheets="@css/styles.css" text="الجنس">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="انثى" />
+                        <MenuItem mnemonicParsing="false" text="دكر" />
+                     </items>
+                  </MenuButton>
                </children>
             </Pane>
          </children>

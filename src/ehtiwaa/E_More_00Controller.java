@@ -60,7 +60,7 @@ public class E_More_00Controller implements Initializable {
         stage.show();
     } 
 
-    //more Button
+    //more Button....massege: you are already in the page
     @FXML
     public void GoToMore_E(ActionEvent event) throws IOException{
 

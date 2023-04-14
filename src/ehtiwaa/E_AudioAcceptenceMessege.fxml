@@ -15,7 +15,7 @@
    <children>
       <Pane layoutX="42.0" layoutY="61.0" prefHeight="24.0" prefWidth="267.0">
          <children>
-            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f8f3f1" height="546.0" layoutX="1.0" layoutY="-7.0" onMouseClicked="#changeScene" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="10.0" styleClass="StyleRadius" width="284.0" />
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f8f3f1" height="546.0" layoutX="1.0" layoutY="-7.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="10.0" styleClass="StyleRadius" width="284.0" />
             <Label layoutX="29.0" layoutY="2.0" prefHeight="20.0" prefWidth="48.0" text="11:07" textFill="#221b1b">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -63,7 +63,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHomePage" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+                  <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHome" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                      <graphic>
                         <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -87,24 +87,17 @@
       <Pane layoutX="37.0" layoutY="214.0" prefHeight="304.0" prefWidth="288.0">
          <children>
             <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="241.0" layoutX="29.0" layoutY="27.0" stroke="WHITE" strokeWidth="5.0" width="239.0" />
-            <Pane layoutX="15.0" layoutY="10.0" prefHeight="284.0" prefWidth="261.0">
+            <Pane layoutX="15.0" layoutY="10.0" prefHeight="239.0" prefWidth="261.0">
                <children>
-                  <Button layoutX="47.0" layoutY="246.0" mnemonicParsing="false" onAction="#AccepteBtnAudio" prefHeight="26.0" prefWidth="173.0" styleClass="buttons2" stylesheets="@css/styles.css" text="موافق" textFill="WHITE">
+                  <Button layoutX="47.0" layoutY="246.0" mnemonicParsing="false" onAction="#Accept" prefHeight="26.0" prefWidth="173.0" styleClass="buttons2" stylesheets="@css/styles.css" text="موافق" textFill="WHITE">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="12.0" />
                      </font>
                   </Button>
                   <Pane layoutX="20.0" layoutY="25.0" prefHeight="62.0" prefWidth="41.0">
                      <children>
-                        <Button fx:id="dd" layoutX="-5.0" layoutY="-2.0" mnemonicParsing="false" onAction="#singup" prefHeight="62.0" prefWidth="48.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#6d918d" underline="true">
-                           <font>
-                              <Font name="Sakkal Majalla Bold" size="12.0" />
-                           </font>
-                           <graphic>
-                              <Pane prefHeight="200.0" prefWidth="200.0" />
-                           </graphic>
-                        </Button>
-                        <Button fx:id="dd1" layoutX="-7.0" layoutY="-5.0" mnemonicParsing="false" onAction="#singup" prefHeight="62.0" prefWidth="48.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#6d918d" underline="true">
+                      
+                        <Button layoutX="-7.0" layoutY="-5.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="62.0" prefWidth="48.0" style="-fx-background-color: transparent; -fx-cursor: hand;" textFill="#6d918d" underline="true">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>

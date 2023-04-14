@@ -85,4 +85,26 @@ public class E_signup2Controller implements Initializable {
         stage.setScene(scene);
         stage.show();
     } 
+    
+        @FXML
+    private void GoToSignUp1_E(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("E_signup1.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    
+          @FXML
+    private void SignUP_E(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("E_CreateRequest_4.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+      
+    
+    
 }

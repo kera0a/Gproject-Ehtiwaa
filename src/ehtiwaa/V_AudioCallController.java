@@ -5,12 +5,17 @@
  */
 package ehtiwaa;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
@@ -23,6 +28,11 @@ public class V_AudioCallController implements Initializable {
    private Stage stage;
    private Scene scene;
    private Parent root;
+   
+    @FXML
+    private Button AcceptReuestBT;
+    @FXML
+    private Button CancelBT;
     /**
      * Initializes the controller class.
      */
@@ -32,7 +42,42 @@ public class V_AudioCallController implements Initializable {
     }    
 
     @FXML
-    private void changeScene(MouseEvent event) {
+    private void GoToMore_V(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("V_More_00.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();     
+    }
+
+    @FXML
+    private void GoToRequest_V(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("V_AllRequest_7.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show(); 
+    }
+
+    @FXML
+    private void BackToHome_V(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("V_AcceptRequest_4.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+        @FXML
+    public void AcceptReuest(ActionEvent event) throws IOException {
+        //needs code
+        
+         
+    }
+
+    @FXML
+    private void Cancel(ActionEvent event) {
+        //needs code
     }
     
 }

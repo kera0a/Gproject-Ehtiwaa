@@ -16,8 +16,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -26,12 +27,11 @@ import javafx.stage.Stage;
  * @author huawei
  */
 public class V_signupController2 implements Initializable {
-   private Stage stage;
-   private Scene scene;
-   private Parent root;
-  
+
     @FXML
-    private TextField usarName;
+    private Button UploadDegBT;
+    @FXML
+    private TextField DegreeBT;
 
     /**
      * Initializes the controller class.
@@ -40,24 +40,41 @@ public class V_signupController2 implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+   private Stage stage;
+   private Scene scene;
+   private Parent root;  
+   
+   
+   @FXML
+    private Label AskForAudioCall;
     
+   @FXML
+   private RadioButton YesAnswer, NoAnswer;
     
-     @FXML
-     public void GoToSingup(ActionEvent event) throws IOException {
-      Parent root = FXMLLoader.load(getClass().getResource("V_AllRequest_7.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-     
-     } 
-     @FXML
-     public void BackToPage_V(ActionEvent event) throws IOException {
-      Parent root = FXMLLoader.load(getClass().getResource("V_signup.fxml"));
-      scene  = new Scene(root); 
-      stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-      stage.setScene(scene);
-      stage.show();
-     
-     } 
+   @FXML
+    private void UploadDegree_V(ActionEvent event) {
+        //needs code
+    }
+
+    @FXML
+    private void BackSignUp1_V(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("V_signup.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();  
+    }
+
+    @FXML
+    private void SignUp_V(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("V_AcceptRequest_4.fxml"));
+        scene  = new Scene(root); 
+        stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();   
+        
+    }
+    
+
+    
 }

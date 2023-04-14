@@ -45,7 +45,7 @@ public class ALL_LogoController implements Initializable {
 
     } 
     
-    public void changeScene(ActionEvent event)throws IOException{
+    public void changeScene(MouseEvent event)throws IOException{
            //     Parent root = FXMLLoader.load(getClass().getResource("ALL_Welcome_1.fxml"));
           //      Scene roott = new Scene(root);    
           //      Stage Window = (Stage) ((Node) event.getSource()).getScene().getWindow();

@@ -45,7 +45,7 @@
                   </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="10.0" layoutY="191.0" prefHeight="284.0" prefWidth="256.0">
+            <Pane layoutX="10.0" layoutY="191.0" prefHeight="250.0" prefWidth="256.0">
                <children>
                   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="383.0" layoutX="13.0" layoutY="-115.0" stroke="WHITE" strokeWidth="5.0" width="235.0" />
                   <Label layoutX="189.0" layoutY="-62.0" prefHeight="18.0" prefWidth="48.0" text="موعد الطلب">
@@ -61,7 +61,7 @@
                      </font>
                   </Label>
                   <TextArea layoutX="32.0" layoutY="143.0" prefHeight="92.0" prefWidth="203.0" styleClass="combobox" stylesheets="@css/styles.css" />
-                  <Button layoutX="47.0" layoutY="255.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="173.0" styleClass="buttons2" stylesheets="@css/styles.css" text="انشاء طلب" textFill="WHITE">
+                  <Button layoutX="47.0" layoutY="255.0" mnemonicParsing="false" onAction="#MakeArequestPsychological" prefHeight="26.0" prefWidth="173.0" styleClass="buttons2" stylesheets="@css/styles.css" text="انشاء طلب" textFill="WHITE">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="12.0" />
                      </font>
@@ -83,7 +83,25 @@
       </Pane>
       <Pane layoutX="48.0" layoutY="558.0" prefHeight="29.0" prefWidth="267.0">
          <children>
-            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
+            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+               <graphic>
+                  <Pane prefHeight="29.0" prefWidth="33.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="15.0" prefHeight="18.0" prefWidth="24.0" text="المزيد" textAlignment="CENTER">
+                           <font>
+                              <Font name="Sakkal Majalla Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="31.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../EhtiwaImages.images/more.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="56.0">
                      <children>
@@ -94,43 +112,25 @@
                         </Label>
                         <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="28.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../NetBeansProjects/EHTIWAA/src/EhtiwaImages.images/list.png" />
+                              <Image url="@../EhtiwaImages.images/list.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
                </graphic>
             </Button>
-            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
+            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHomePage" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
                <graphic>
                   <Pane prefHeight="29.0" prefWidth="33.0">
                      <children>
-                        <Label layoutX="32.0" layoutY="12.0" prefHeight="18.0" prefWidth="24.0" text="المزيد">
-                           <font>
-                              <Font name="Sakkal Majalla Bold" size="13.0" />
-                           </font>
-                        </Label>
-                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="32.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../NetBeansProjects/EHTIWAA/src/EhtiwaImages.images/more.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-               </graphic>
-            </Button>
-            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@../../../NetBeansProjects/EHTIWAA/src/ehtiwaa/css/styles.css">
-               <graphic>
-                  <Pane prefHeight="29.0" prefWidth="33.0">
-                     <children>
-                        <Label layoutX="23.0" layoutY="17.0" prefHeight="18.0" prefWidth="33.0" text="الرئيسية">
+                        <Label layoutX="24.0" layoutY="17.0" prefHeight="18.0" prefWidth="33.0" text="الرئيسية">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="26.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="29.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../NetBeansProjects/EHTIWAA/src/EhtiwaImages.images/IM2.png" />
+                              <Image url="@../EhtiwaImages.images/IM2.png" />
                            </image>
                         </ImageView>
                      </children>

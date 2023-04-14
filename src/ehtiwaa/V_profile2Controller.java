@@ -16,6 +16,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
@@ -36,6 +38,11 @@ public class V_profile2Controller implements Initializable {
     @FXML
     private TextField usarName;
 
+    @FXML
+    private Label QForAudioCall;
+    
+   @FXML
+   private RadioButton YesAnswer, NoAnswer;
     
     /**
      * Initializes the controller class.
@@ -45,9 +52,7 @@ public class V_profile2Controller implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void changeScene(MouseEvent event) {
-    }
+
 
     @FXML
     public void Modify(ActionEvent event) {
@@ -90,6 +95,8 @@ public class V_profile2Controller implements Initializable {
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-    } 
+    }
+
+  
     
 }

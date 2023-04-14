@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <Pane prefHeight="608.0" prefWidth="382.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ehtiwaa.V_signupController2">
    <children>
@@ -47,77 +47,22 @@
             <Rectangle arcHeight="20.0" arcWidth="20.0" height="24.0" layoutX="87.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
             <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#7b7b7b" height="6.0" layoutX="121.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
             <Circle fill="#2d2c2c" layoutX="166.0" layoutY="9.0" radius="3.0" stroke="#4e4d4d" strokeType="INSIDE" strokeWidth="1.5" />
-            <Pane layoutX="8.0" layoutY="497.0" prefHeight="29.0" prefWidth="267.0">
-               <children>
-                  <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
-                     <graphic>
-                        <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../EhtiwaImages.images/list.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
-                     <graphic>
-                        <ImageView fitHeight="27.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../EhtiwaImages.images/more.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
-                     <graphic>
-                        <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../EhtiwaImages.images/IM2.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Line endX="170.66665649414062" layoutX="98.0" layoutY="-5.0" startX="-97.33332824707031" />
-                  <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="47.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
-                  <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="137.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
-               </children>
-            </Pane>
             <Pane layoutX="20.0" layoutY="147.0" prefHeight="344.0" prefWidth="288.0">
                <children>
                   <Pane layoutX="-138.0" layoutY="30.0" prefHeight="284.0" prefWidth="261.0">
                      <children>
-                        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="444.0" layoutX="137.0" layoutY="-135.0" stroke="WHITE" strokeWidth="5.0" width="248.0" />
-                        <Label layoutX="214.0" layoutY="-146.0" prefHeight="64.0" prefWidth="267.0" text="معلومات التسجيل" textAlignment="RIGHT" wrapText="true">
+                        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="443.0" layoutX="141.0" layoutY="-136.0" stroke="WHITE" strokeWidth="5.0" width="238.0" />
+                        <Label layoutX="209.0" layoutY="-152.0" prefHeight="64.0" prefWidth="267.0" text="معلومات التسجيل" textAlignment="RIGHT" wrapText="true">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Pane layoutX="173.0" layoutY="152.0" prefHeight="28.0" prefWidth="195.0">
-                           <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                              <PasswordField alignment="CENTER_RIGHT" layoutY="1.0" prefHeight="25.0" prefWidth="158.0" promptText="**************" />
-                              <Label layoutX="141.0" layoutY="-20.0" text="الرمز السري">
-                                 <font>
-                                    <Font name="Sakkal Majalla Bold" size="14.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="136.0" layoutY="-18.0" text="*" textFill="#d10d0d">
-                                 <font>
-                                    <Font name="System Bold" size="12.0" />
-                                 </font>
-                              </Label>
-                              <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="162.0" layoutY="3.0">
-                                 <image>
-                                    <Image url="@../EhtiwaImages.images/IM5-removebg-preview.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </Pane>
                         <Label layoutX="281.0" layoutY="-114.0" prefHeight="64.0" prefWidth="267.0" text="اختيار مجال التطوع:" textAlignment="RIGHT" wrapText="true">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="276.0" layoutY="-91.0" text="*" textFill="#d10d0d">
+                        <Label layoutX="276.0" layoutY="-90.0" text="*" textFill="#d10d0d">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
@@ -128,33 +73,28 @@
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Label>
-                        <CheckBox alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="295.0" layoutY="-62.0" mnemonicParsing="false" />
-                        <Label layoutX="268.0" layoutY="-64.0" text="نفسي">
+                        <CheckBox alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="278.0" layoutY="-62.0" mnemonicParsing="false" />
+                        <Label layoutX="251.0" layoutY="-64.0" text="نفسي">
                            <font>
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Label>
-                        <Label layoutX="206.0" layoutY="-64.0" text="اجتماعي">
+                        <Label layoutX="174.0" layoutY="-64.0" text="اجتماعي">
                            <font>
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Label>
-                        <CheckBox alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="243.0" layoutY="-62.0" mnemonicParsing="false" />
-                        <Label layoutX="304.0" layoutY="-34.0" text="*" textFill="#d10d0d">
+                        <CheckBox alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="211.0" layoutY="-62.0" mnemonicParsing="false" />
+                        <Label layoutX="304.0" layoutY="-36.0" text="*" textFill="#d10d0d">
                            <font>
                               <Font name="System Bold" size="12.0" />
                            </font>
                         </Label>
-                        <Button alignment="TOP_RIGHT" layoutX="182.0" layoutY="29.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="103.0" text="تحميل الشهادة">
+                        <Button fx:id="UploadDegBT" alignment="TOP_RIGHT" layoutX="182.0" layoutY="29.0" mnemonicParsing="false" onAction="#UploadDegree_V" prefHeight="34.0" prefWidth="101.0" styleClass="buttons1" stylesheets="@css/styles.css" text="تحميل الشهادة">
                            <font>
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Button>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="191.0" layoutY="33.0">
-                           <image>
-                              <Image url="@../../../../../../Downloads/upload_symbol-removebg-preview.png" />
-                           </image>
-                        </ImageView>
                         <Label layoutX="300.0" layoutY="34.0" text="الشهادة المهنية">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="14.0" />
@@ -170,37 +110,40 @@
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <RadioButton layoutX="342.0" layoutY="109.0" mnemonicParsing="false" />
-                        <RadioButton layoutX="281.0" layoutY="109.0" mnemonicParsing="false" />
+                        <RadioButton fx:id="YesAnswer" layoutX="342.0" layoutY="109.0" mnemonicParsing="false">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="AskForUS" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="NoAnswer" layoutX="281.0" layoutY="109.0" mnemonicParsing="false" toggleGroup="$AskForUS" />
                         <Label layoutX="321.0" layoutY="107.0" text="نعم" textAlignment="CENTER">
                            <font>
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Label>
+                        <Button layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#BackSignUp1_V" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
+                           <font>
+                              <Font name="Sakkal Majalla Bold" size="12.0" />
+                           </font>
+                        </Button>
                         <Label layoutX="266.0" layoutY="107.0" text="لا">
                            <font>
                               <Font name="Sakkal Majalla" size="14.0" />
                            </font>
                         </Label>
-                        <Button layoutX="163.0" layoutY="238.0" mnemonicParsing="false" onAction="#BackToPage_V" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="الخلف" textFill="#faf8f8">
+                        <Button layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#SignUp_V" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="تسجيل" textFill="#faf3f3">
                            <font>
                               <Font name="Sakkal Majalla Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button layoutX="163.0" layoutY="268.0" mnemonicParsing="false" onAction="#GoToSingup" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="تسجيل" textFill="#faf3f3">
-                           <font>
-                              <Font name="Sakkal Majalla Bold" size="12.0" />
-                           </font>
-                        </Button>
-                        <Pane layoutX="176.0" layoutY="-19.0" prefHeight="28.0" prefWidth="195.0">
+                        <Pane layoutX="172.0" layoutY="-20.0" prefHeight="28.0" prefWidth="195.0">
                            <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                              <TextField fx:id="usarName" alignment="CENTER_RIGHT" cacheShape="false" prefHeight="6.0" prefWidth="158.0" promptText="المؤهل العلمي" styleClass="textfild1">
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+                              <TextField fx:id="DegreeBT" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" prefHeight="6.0" prefWidth="158.0" promptText="المؤهل العلمي" styleClass="textfild2" stylesheets="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css">
                                  <font>
                                     <Font name="Sakkal Majalla" size="11.0" />
                                  </font>
                               </TextField>
-                              <Label layoutX="133.0" layoutY="-19.0" text="المؤهل العلمي">
+                              <Label layoutX="137.0" layoutY="-19.0" text="المؤهل العلمي">
                                  <font>
                                     <Font name="Sakkal Majalla Bold" size="14.0" />
                                  </font>
@@ -212,32 +155,75 @@
                               </ImageView>
                            </children>
                         </Pane>
-                        <Pane layoutX="174.0" layoutY="199.0" prefHeight="28.0" prefWidth="195.0">
-                           <children>
-                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                              <PasswordField alignment="CENTER_RIGHT" layoutY="2.0" prefHeight="25.0" prefWidth="158.0" promptText="**************" />
-                              <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="162.0" layoutY="3.0">
-                                 <image>
-                                    <Image url="@../EhtiwaImages.images/IM5-removebg-preview.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </Pane>
-                        <Label layoutX="290.0" layoutY="182.0" text="تأكبد الرمز السري">
-                           <font>
-                              <Font name="Sakkal Majalla Bold" size="14.0" />
-                           </font>
-                        </Label>
-                        <Label layoutX="284.0" layoutY="183.0" text="*" textFill="#d10d0d">
-                           <font>
-                              <Font name="System Bold" size="12.0" />
-                           </font>
-                        </Label>
+                        <ImageView fitHeight="28.0" fitWidth="32.0" layoutX="184.0" layoutY="31.0">
+                           <image>
+                              <Image url="@../EhtiwaImages.images/upload_symbol-removebg-preview.png" />
+                           </image>
+                        </ImageView>
                      </children>
                   </Pane>
                </children>
             </Pane>
          </children>
       </Pane>
+      <Pane layoutX="93.0" layoutY="389.0" prefHeight="28.0" prefWidth="188.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" layoutY="-1.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="134.0" layoutY="-20.0" prefHeight="21.0" prefWidth="55.0" text="الرمز السري">
+               <font>
+                  <Font name="Sakkal Majalla Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="162.0" layoutY="3.0">
+               <image>
+                  <Image url="@../EhtiwaImages.images/IM5-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <PasswordField alignment="CENTER_RIGHT" layoutX="4.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="********************" styleClass="textfild2">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <stylesheets>
+                  <URL value="@../../../../../OneDrive/المستندات/NetBeansProjects/Gproject-Ehtiwaa/src/ehtiwaa/css/styles.css" />
+                  <URL value="@css/styles.css" />
+               </stylesheets>
+            </PasswordField>
+            <Label layoutX="135.0" layoutY="-18.0" text="*" textFill="#d10d0d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="94.0" layoutY="437.0" prefHeight="28.0" prefWidth="188.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" layoutY="-1.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="103.0" layoutY="-20.0" prefHeight="21.0" prefWidth="84.0" text="تأكيد الرمز السري">
+               <font>
+                  <Font name="Sakkal Majalla Bold" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="162.0" layoutY="3.0">
+               <image>
+                  <Image url="@../EhtiwaImages.images/IM5-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <PasswordField alignment="CENTER_RIGHT" layoutX="3.0" layoutY="-1.0" prefHeight="29.0" prefWidth="158.0" promptText="********************" styleClass="textfild2" stylesheets="@css/styles.css">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="110.0" layoutY="-19.0" text="*" textFill="#d10d0d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="65.0" fitWidth="85.0" layoutX="236.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../EhtiwaImages.images/logo_Ehtewa2-remove.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

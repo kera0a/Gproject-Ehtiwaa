@@ -46,68 +46,29 @@
             <Rectangle arcHeight="20.0" arcWidth="20.0" height="24.0" layoutX="87.0" layoutY="-5.0" stroke="BLACK" strokeType="INSIDE" width="112.0" />
             <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#7b7b7b" height="6.0" layoutX="121.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="33.0" />
             <Circle fill="#2d2c2c" layoutX="166.0" layoutY="9.0" radius="3.0" stroke="#4e4d4d" strokeType="INSIDE" strokeWidth="1.5" />
-            <Pane layoutX="8.0" layoutY="497.0" prefHeight="29.0" prefWidth="267.0">
-               <children>
-                  <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
-                     <graphic>
-                        <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../EhtiwaImages.images/list.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
-                     <graphic>
-                        <ImageView fitHeight="27.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../EhtiwaImages.images/more.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHome_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
-                     <graphic>
-                        <ImageView fitHeight="31.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../EhtiwaImages.images/IM2.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Line endX="170.66665649414062" layoutX="98.0" layoutY="-5.0" startX="-97.33332824707031" />
-                  <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="47.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
-                  <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="137.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
-               </children>
-            </Pane>
             <Pane layoutX="-119.0" layoutY="170.0" prefHeight="284.0" prefWidth="261.0">
                <children>
-                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="444.0" layoutX="138.0" layoutY="-134.0" stroke="WHITE" strokeWidth="5.0" width="248.0" />
-                  <DatePicker layoutX="258.0" layoutY="194.0" prefHeight="25.0" prefWidth="109.0" />
-                  <Label layoutX="318.0" layoutY="174.0" text="تاريخ الميلاد">
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="420.0" layoutX="141.0" layoutY="-131.0" stroke="WHITE" strokeWidth="5.0" width="242.0" />
+                  <DatePicker layoutX="247.0" layoutY="218.0" prefHeight="25.0" prefWidth="109.0" styleClass="textfild1" stylesheets="@css/styles.css" />
+                  <Label layoutX="309.0" layoutY="197.0" text="تاريخ الميلاد">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="209.0" layoutY="176.0" text="الجنس">
+                  <Label layoutX="206.0" layoutY="198.0" text="الجنس">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="163.0" layoutY="247.0" mnemonicParsing="false" onAction="#GoToProfile2_V" prefHeight="26.0" prefWidth="204.0" styleClass="buttons2" stylesheets="@css/styles.css" text="التالي" textFill="#faf3f3">
-                     <font>
-                        <Font name="Sakkal Majalla Bold" size="12.0" />
-                     </font>
-                  </Button>
-                  <Label layoutX="224.0" layoutY="-149.0" prefHeight="64.0" prefWidth="85.0" text="الملف الشخصي" textAlignment="RIGHT" wrapText="true">
+                  <Label layoutX="220.0" layoutY="-152.0" prefHeight="64.0" prefWidth="85.0" text="الملف الشخصي" textAlignment="RIGHT" wrapText="true">
                      <font>
                         <Font name="Sakkal Majalla Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Pane layoutX="174.0" layoutY="-40.0" prefHeight="28.0" prefWidth="195.0">
+                  <Pane layoutX="165.0" layoutY="-27.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                        <TextField fx:id="usarName" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="1.0" prefHeight="6.0" prefWidth="158.0" promptText="الإسم الثلاثي" styleClass="textfild1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" layoutY="1.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+                        <TextField fx:id="NameTF" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="1.0" prefHeight="29.0" prefWidth="158.0" promptText="الإسم الثلاثي" styleClass="textfild2" stylesheets="@css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -117,17 +78,17 @@
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="161.0" layoutY="1.0">
+                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="161.0" layoutY="3.0">
                            <image>
-                              <Image url="@../EhtiwaImages.images/user%20(1).png" />
+                              <Image url="@../EhtiwaImages.images/pro.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="175.0" layoutY="5.0" prefHeight="28.0" prefWidth="195.0">
+                  <Pane layoutX="165.0" layoutY="20.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                        <TextField fx:id="usarName1" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="1.0" prefHeight="6.0" prefWidth="158.0" promptText="الحنسية" styleClass="textfild1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+                        <TextField fx:id="NatTF" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" prefHeight="29.0" prefWidth="158.0" promptText="الحنسية" styleClass="textfild2" stylesheets="@css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -137,17 +98,17 @@
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="162.0" layoutY="2.0">
+                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="162.0" layoutY="3.0">
                            <image>
                               <Image url="@../EhtiwaImages.images/flag.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="176.0" layoutY="50.0" prefHeight="28.0" prefWidth="195.0">
+                  <Pane layoutX="165.0" layoutY="66.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                        <TextField fx:id="usarName11" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="1.0" prefHeight="6.0" prefWidth="158.0" promptText="رقم الهوية" styleClass="textfild1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+                        <TextField fx:id="IdTF" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" prefHeight="29.0" prefWidth="158.0" promptText="رقم الهوية" styleClass="textfild2" stylesheets="@css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -157,17 +118,17 @@
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="26.0" fitWidth="24.0" layoutX="162.0" layoutY="1.0">
+                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="162.0" layoutY="4.0">
                            <image>
                               <Image url="@../EhtiwaImages.images/id-card.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="175.0" layoutY="96.0" prefHeight="28.0" prefWidth="195.0">
+                  <Pane layoutX="165.0" layoutY="116.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                        <TextField fx:id="usarName12" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="1.0" prefHeight="6.0" prefWidth="158.0" promptText="الحنسية" styleClass="textfild1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+                        <TextField fx:id="PhonNoTF" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" prefHeight="29.0" prefWidth="158.0" promptText="رقم الهاتف" styleClass="textfild2" stylesheets="@css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -177,23 +138,17 @@
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="163.0" layoutY="1.0">
+                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="162.0" layoutY="3.0">
                            <image>
                               <Image url="@../EhtiwaImages.images/phone-receiver-silhouette.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <MenuButton layoutX="176.0" layoutY="195.0" mnemonicParsing="false" text="الحنس">
-                     <items>
-                        <MenuItem mnemonicParsing="false" text="انثى" />
-                        <MenuItem mnemonicParsing="false" text="دكر" />
-                     </items>
-                  </MenuButton>
-                  <Pane layoutX="176.0" layoutY="141.0" prefHeight="28.0" prefWidth="195.0">
+                  <Pane layoutX="165.0" layoutY="166.0" prefHeight="28.0" prefWidth="195.0">
                      <children>
-                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
-                        <TextField fx:id="usarName2" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" layoutY="1.0" prefHeight="6.0" prefWidth="158.0" promptText="الإسم الثلاثي" styleClass="textfild1">
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d90ae" height="29.0" layoutX="158.0" stroke="#3d5272" strokeType="INSIDE" width="32.0" />
+                        <TextField fx:id="CityTF" alignment="CENTER_RIGHT" cacheShape="false" layoutX="1.0" prefHeight="29.0" prefWidth="158.0" promptText="المدينة" styleClass="textfild2" stylesheets="@css/styles.css">
                            <font>
                               <Font name="Sakkal Majalla" size="11.0" />
                            </font>
@@ -203,24 +158,106 @@
                               <Font name="Sakkal Majalla Bold" size="14.0" />
                            </font>
                         </Label>
-                        <ImageView fitHeight="20.0" fitWidth="24.0" layoutX="161.0" layoutY="4.0">
+                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="161.0" layoutY="4.0">
                            <image>
                               <Image url="@../EhtiwaImages.images/pin.png" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
-                  <Pane layoutX="218.0" layoutY="-109.0" prefHeight="64.0" prefWidth="95.0">
+                  <Pane layoutX="221.0" layoutY="-102.0" prefHeight="64.0" prefWidth="85.0">
                      <children>
-                        <ImageView fitHeight="56.0" fitWidth="64.0" layoutX="15.0" layoutY="4.0">
+                        <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="9.0" layoutY="3.0">
                            <image>
-                              <Image url="@../../../../no%20profile%20pic.jpeg" />
+                              <Image url="@../EhtiwaImages.images/no%20profile%20pic.jpeg" />
                            </image>
                         </ImageView>
                      </children>
                   </Pane>
+                  <Button layoutX="182.0" layoutY="273.0" mnemonicParsing="false" onAction="#GoToProfile2_V" prefHeight="13.0" prefWidth="164.0" styleClass="buttons2" stylesheets="@css/styles.css" text="التالي" textFill="WHITE">
+                     <font>
+                        <Font name="Sakkal Majalla" size="12.0" />
+                     </font>
+                  </Button>
+                  <MenuButton layoutX="171.0" layoutY="217.0" mnemonicParsing="false" styleClass="textfild2" stylesheets="@css/styles.css" text="الجنس">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="انثى" />
+                        <MenuItem mnemonicParsing="false" text="دكر" />
+                     </items>
+                  </MenuButton>
                </children>
             </Pane>
+         </children>
+      </Pane>
+      <ImageView fitHeight="65.0" fitWidth="85.0" layoutX="323.0" layoutY="-134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../EhtiwaImages.images/logo_Ehtewa2-remove.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="85.0" layoutX="234.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../EhtiwaImages.images/logo_Ehtewa2-remove.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="50.0" layoutY="558.0" prefHeight="29.0" prefWidth="267.0">
+         <children>
+            <Button layoutX="172.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToMore_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+               <graphic>
+                  <Pane prefHeight="29.0" prefWidth="33.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="15.0" prefHeight="18.0" prefWidth="24.0" text="المزيد" textAlignment="CENTER">
+                           <font>
+                              <Font name="Sakkal Majalla Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="31.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../EhtiwaImages.images/more.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button layoutX="3.0" layoutY="-6.0" mnemonicParsing="false" onAction="#GoToRequest_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+               <graphic>
+                  <Pane prefHeight="29.0" prefWidth="56.0">
+                     <children>
+                        <Label layoutX="26.0" layoutY="18.0" prefHeight="18.0" prefWidth="33.0" text="الطلبات">
+                           <font>
+                              <Font name="Sakkal Majalla Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="28.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../EhtiwaImages.images/list.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Button layoutX="88.0" layoutY="-6.0" mnemonicParsing="false" onAction="#BackToHome_V" prefHeight="37.0" prefWidth="95.0" styleClass="buttonsBar" stylesheets="@css/styles.css">
+               <graphic>
+                  <Pane prefHeight="29.0" prefWidth="33.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="17.0" prefHeight="18.0" prefWidth="33.0" text="الرئيسية">
+                           <font>
+                              <Font name="Sakkal Majalla Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="29.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../EhtiwaImages.images/IM2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </graphic>
+            </Button>
+            <Line endX="170.66665649414062" layoutX="98.0" layoutY="-5.0" startX="-97.33332824707031" />
+            <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="47.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
+            <Line endX="44.83332824707031" endY="68.6666259765625" layoutX="137.0" layoutY="-72.0" startX="44.83335876464844" startY="103.33331298828125" />
          </children>
       </Pane>
    </children>

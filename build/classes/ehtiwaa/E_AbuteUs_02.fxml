@@ -135,12 +135,12 @@
          <children>
             <Label layoutX="18.0" layoutY="-2.0" lineSpacing="10.0" prefHeight="209.0" prefWidth="229.0" text="(احتواء) يوفر لكم المساندات بشكل مختلف حيث نعتمد على التقنية لحل مشكلاتكم بطرقٍ سريعة و آمنة , فموقعنا يساهم في مساعدة و تلبية احتياجات كبار السن  عبر اكبر عدد من المتطوعين الذين تثقون بهم لذلك فنحن نقدم لكم فرصاً للتطوع الاجتماعي لتكونوا جزءًا من احتواءنا" textAlignment="CENTER" textFill="#3d5272" wrapText="true">
                <font>
-                  <Font name="Sakkal Majalla Bold" size="12.0" />
+                  <Font name="Sakkal Majalla Bold" size="14.0" />
                </font>
             </Label>
-            <Text fill="#6d918d" layoutX="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="مرحباً بكم في مجتمع احتواء " wrappingWidth="112.0">
+            <Text fill="#6d918d" layoutX="78.0" layoutY="-12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="مرحباً بكم في مجتمع احتواء " wrappingWidth="130.0">
                <font>
-                  <Font name="Sakkal Majalla Bold" size="13.0" />
+                  <Font name="Sakkal Majalla Bold" size="14.0" />
                </font>
             </Text>
             <ImageView fitHeight="108.0" fitWidth="130.0" layoutX="68.0" layoutY="-161.0" pickOnBounds="true" preserveRatio="true">

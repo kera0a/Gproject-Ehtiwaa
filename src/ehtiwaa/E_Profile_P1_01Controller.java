@@ -16,6 +16,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -30,6 +31,16 @@ public class E_Profile_P1_01Controller implements Initializable {
     private Parent root;
     
     Button homepageAllmorebtn;
+    @FXML
+    private TextField usarName;
+    @FXML
+    private TextField usarName1;
+    @FXML
+    private TextField usarName11;
+    @FXML
+    private TextField usarName111;
+    @FXML
+    private TextField usarName1111;
     /**
      * Initializes the controller class.
     */
@@ -72,14 +83,16 @@ public class E_Profile_P1_01Controller implements Initializable {
     } 
  
     //profile Button
-    @FXML
-    public void GoToProfile_P2_E(ActionEvent event) throws IOException{
 
+    @FXML
+    private void GoToProfile2_E(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("E_Profile_P2_01.fxml"));
         scene  = new Scene(root); 
         stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-
     }
+    
+
+    
 }

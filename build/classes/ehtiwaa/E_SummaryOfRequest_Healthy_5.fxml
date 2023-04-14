@@ -45,7 +45,7 @@
                   </ImageView>
                </children>
             </Pane>
-            <Pane layoutX="10.0" layoutY="191.0" prefHeight="284.0" prefWidth="256.0">
+            <Pane layoutX="10.0" layoutY="191.0" prefHeight="250.0" prefWidth="256.0">
                <children>
                   <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#c8e9e540" height="383.0" layoutX="13.0" layoutY="-115.0" stroke="WHITE" strokeWidth="5.0" width="235.0" />
                   <Label layoutX="189.0" layoutY="-62.0" prefHeight="18.0" prefWidth="48.0" text="موعد الطلب">
